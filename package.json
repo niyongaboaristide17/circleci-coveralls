@@ -10,7 +10,7 @@
     "start": "npm run build && better-npm-run prod",
     "dev": "better-npm-run dev",
     "test": "better-npm-run test",
-    "coverage": "nyc report --reporter=text-lcov | coveralls"
+    "coverage": "better-npm-run cov"
   },
   "betterScripts": {
     "dev": {
@@ -32,9 +32,11 @@
       "env": {
         "NODE_ENV": "production"
       }
+    },
+    "cov": {
+      "command": "nyc report --reporter=text-lcov | coveralls"
     }
   },
-
   "dependencies": {
     "@babel/cli": "^7.17.6",
     "@babel/core": "^7.17.5",
