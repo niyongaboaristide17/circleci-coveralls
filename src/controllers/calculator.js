@@ -13,11 +13,7 @@ export class Calculator{
     }
 
     static divide(a, b){
-        try {
-            return a / b
-        } catch (error) {
-            return 0
-        }
+        return a / b
     }
 
 }
