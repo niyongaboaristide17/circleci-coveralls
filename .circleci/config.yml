@@ -14,6 +14,10 @@ jobs:
     steps:
       - checkout
       - run: node --version
+      - run:
+          name: coverage export
+          command: yarn run coverage
+
 
 
 # Invoke jobs via workflows
