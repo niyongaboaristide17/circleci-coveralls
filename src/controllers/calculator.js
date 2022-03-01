@@ -16,12 +16,4 @@ export class Calculator{
         return a / b
     }
 
-    static pow(a, b){
-        return Math.pow(a, b)
-    }
-
-    static modulus(a, b){
-        return a % b
-    }
-
 }
