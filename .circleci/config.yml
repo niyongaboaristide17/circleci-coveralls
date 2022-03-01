@@ -15,9 +15,6 @@ jobs:
       - checkout
       - run: node --version
       - run:
-          name: install yarn
-          command: npm install yarn -g
-      - run:
           name: install dependencies
           command: yarn
       - run:
