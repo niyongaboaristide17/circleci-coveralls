@@ -16,4 +16,8 @@ export class Calculator{
         return a / b
     }
 
+    static pow(a, b){
+        return Math.pow(a, b)
+    }
+
 }
