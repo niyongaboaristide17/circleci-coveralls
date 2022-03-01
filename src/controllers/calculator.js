@@ -20,4 +20,8 @@ export class Calculator{
         return Math.pow(a, b)
     }
 
+    static modulus(a, b){
+        return a % b
+    }
+
 }
