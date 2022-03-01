@@ -14,6 +14,19 @@ jobs:
     steps:
       - checkout
       - run: node --version
+      - run:
+          name: install yarn
+          command: npm install yarn -g
+      - run:
+          name: install dependencies
+          command: yarn
+      - run:
+          name: testing
+          command: yarn run test
+      - run:
+          name: coverage
+          command: yarn run coverage
+
       - coveralls/upload
 
 
